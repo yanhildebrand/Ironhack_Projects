@@ -1,0 +1,8 @@
+# .gitignore
+
+# Exclude specific files
+"Project_2_spotify_recommender/config.py"
+"Project_2_spotify_recommender/config_02.py"
+"Project_2_spotify_recommender/config_03.py"
+"Project_2_spotify_recommender/config_04.py"
+"Project_2_spotify_recommender/config_05.py"

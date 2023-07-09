@@ -1,0 +1,79 @@
+Swan Lake
+No church in the wild
+Let's twist again
+Sandstorm
+
+Clair de Lune
+Till I collapse
+Despacito
+Animals - Martin Garrix
+
+Autumn Leaves
+Still Dre
+YMCA
+Sandstorm
+
+more classical
+more raggaeton
+more twist-like
+more trip hop, more quantic style
+
+
+
+https://open.spotify.com/playlist/3ac0B2d77mmrpTu2S0vM09 - gabber classics
+https://open.spotify.com/playlist/42gxpKWSAzT5k05nIzP3O2 - celtic relaxation music
+https://open.spotify.com/playlist/1EcZg2hV55wFxCUUiYP6sR - buddha code
+https://open.spotify.com/playlist/1kqBP6eE24L0agNpnTIKtc - ambient chill
+https://open.spotify.com/playlist/39sVxPTg7BKwrf2MfgrtcD - Punk Rock (90's & 00's)
+https://open.spotify.com/playlist/3sw0t0icwozVoQP5J2Z8cX - Best Piano Music
+
+https://open.spotify.com/playlist/3kTp9OY5VZODroxNgAsZum - Detroit house classics
+https://open.spotify.com/playlist/264g6qvmsnvmEsR6YIYj46 - Best of Jazz
+https://open.spotify.com/playlist/0YbsKlGOzjBujhKmlo1L9S - Trip hop best of
+https://open.spotify.com/playlist/39Po1ofjiptesvJwXdkoei - best of spanish classical guitar
+https://open.spotify.com/playlist/33oETmLz10Rip4yzE0eiOg - Tibetan meditation
+https://open.spotify.com/playlist/3d4cAz1AzK6d4bAyh170or - Afghan Mix 2023
+https://open.spotify.com/playlist/08xzOilY7Zq8dFIMO6HsPm - Techno mix 2023
+https://open.spotify.com/playlist/37i9dQZF1EQp9BVPsNVof1 - Dance/Electronic Mix
+https://open.spotify.com/playlist/0S4YKOhaX6KGw5ccvj8GJC - Film Scores and Soundtrack
+https://open.spotify.com/playlist/5RLstnnBzIqejCLHZHVu9G - Best video game soundtracks
+https://open.spotify.com/playlist/0bJvpsn0TDZwIDUjz4d75S - Best Classical Music
+https://open.spotify.com/playlist/4cCEvRy6jABg5olmvfG1TD - Modern classical music
+https://open.spotify.com/playlist/6R4QRuhPzMqFSAJR4a20LR - Best of Brazilian Funk
+https://open.spotify.com/playlist/0iGt2xEfTyW25oPc7RWRZG - We Love Brazilian Pop
+https://open.spotify.com/playlist/5VHwilXZX7Px04O808bMdH - Nitin Sawhney
+https://open.spotify.com/playlist/0o7EjITUfYNgFdUpAL7fZG - Bonobo, Lemon Jelly, Electronic Instrumental
+https://open.spotify.com/playlist/71d99pLh0TpbdIJESHAsDN - LoFi Beats
+https://open.spotify.com/playlist/1QcsybeUidDJIrPQTHS6dD - Anime Lofi Playlist
+https://open.spotify.com/playlist/0Q3ugz23LAXFg2PvXJ8hMx - Trance 2023
+https://open.spotify.com/playlist/4YlOfyS4DP4nr0l1rTLQ8W - Carribean Vibes 2023
+https://open.spotify.com/playlist/1m14XI7dEtq4oIS5ZeedLQ - Baltic Folk
+https://open.spotify.com/playlist/40OzmuANnGkN9AumRu4tin - Balkan 2023 | Top 100
+
+
+
+#conda install -c districtdatalabs yellowbrick
+#pip install districtdatalabs yellowbrick
+
+from yellowbrick.cluster import SilhouetteVisualizer
+model = KMeans(35, random_state=42)
+visualizer = SilhouetteVisualizer(model, colors='yellowbrick')
+visualizer.fit(X_scaled_df)        # Fit the data to the visualizer
+visualizer.show()        # Finalize and render the figure
+
+# get track features and store in dataframe
+listOfSongFeatures = []
+for i in range(0,len(listOfTrackIDs)):
+    if listOfTrackIDs[i] is not None :
+        audioFeatures = sp.audio_features(listOfTrackIDs[i])[0]
+        if audioFeatures is not None :
+            audioFeaturesList = audioFeatures
+            listOfSongFeatures.append(audioFeatures) #(audioFeaturesList)
+            listOfSongFeatures.append(sp.audio_features(listOfTrackIDs[i])[0])
+
+create second object for training model
+
+check if song exists - only 1 option, possibly 5 options several options
+scaletransform song features to be predicted, users input, with the same fit function established in creating the model
+select random track ID from the cluster
+play track

@@ -1,0 +1,23 @@
+https://open.spotify.com/playlist/3ac0B2d77mmrpTu2S0vM09 - gabber classics
+https://open.spotify.com/playlist/42gxpKWSAzT5k05nIzP3O2 - celtic relaxation music
+https://open.spotify.com/playlist/1EcZg2hV55wFxCUUiYP6sR - buddha code
+https://open.spotify.com/playlist/1kqBP6eE24L0agNpnTIKtc - ambient chill
+https://open.spotify.com/playlist/39sVxPTg7BKwrf2MfgrtcD - Punk Rock (90's & 00's)
+https://open.spotify.com/playlist/3sw0t0icwozVoQP5J2Z8cX - Best Piano Music
+
+create second object for training model
+
+check if song exists - only 1 option, possibly 5 options several options
+scaletransform song features to be predicted, users input, with the same fit function established in creating the model
+select random track ID from the cluster
+play track
+
+bill laurence - zeal
+insx - Need You Tonight
+Prince Igor - Alexander Borodin
+
+song = sp.search(q="Bad Guy", limit=5,market="GB")
+
+sp.audio_features(results["tracks"]["items"][0]["id"] ) 
+
+print(results["tracks"]["items"][0]["album"]["artists"]) # List with artists and information	
