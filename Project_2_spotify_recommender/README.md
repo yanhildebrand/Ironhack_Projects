@@ -1,6 +1,6 @@
 Spotify Song Recommender
 
-After cloning the repo, running Project2_2023.07.05_Spotify_Recommender_App_Oneliner.ipynb in jupyter notebook will run the app with defailt presets.
+After cloning the repo, running Project2_2023.07.05_Spotify_Recommender_App_Oneliner.ipynb in jupyter notebook will run the app with default presets.
 
 The K-Means clustering model can be built from scratch following these notebooks:
 1. Project2_2023.07.05_Loading_Playlists.ipynb
