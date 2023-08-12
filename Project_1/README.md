@@ -11,3 +11,5 @@ Results: 3 top-most trending videos in terms of the current metric (views, likes
 https://public.tableau.com/app/profile/jan.hildebrand/viz/Ironhack_Project_1_YouTube_Analytics_Dashboard/Dashboard1Views
 - The jupyter notebook for preparing the data is in the repo under the following name: 
 Project1_2023.06.23_1.2_loading_data.ipynb
+- The data can be downloaded here: https://drive.google.com/file/d/1lep8NpgV3UwGxJUv1zJeWKiBpQRbAYJb/view?usp=sharing
+  or from kaggle: https://www.kaggle.com/datasets/datasnaek/youtube-new
