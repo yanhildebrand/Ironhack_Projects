@@ -1,4 +1,4 @@
-Spotify Song Recommender
+#### Spotify Song Recommender
 
 After cloning the repo, running Project2_2023.07.05_Spotify_Recommender_App_Oneliner.ipynb in jupyter notebook will run the app with default presets.
 
